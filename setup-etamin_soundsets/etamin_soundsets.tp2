@@ -1,0 +1,11 @@
+BACKUP ~etamin_soundsets\backup~
+AUTHOR ~Etamin~
+VERSION ~1.0~
+ 
+BEGIN ~Install 57 extra soundsets (for Polish language only)~
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ ~Only for Enhanced Edition~
+REQUIRE_PREDICATE ~%EE_LANGUAGE%~ STR_EQ ~pl_PL~ ~Only for Polish language~
+ 
+COPY ~etamin_soundsets/sounds~ ~lang/pl_PL/Sounds~ // copy all files from etamin_soundsets/Sounds folder to lang/pl_PL/Sounds folder (paths are relative to game directory)
+ 
+// end of component
